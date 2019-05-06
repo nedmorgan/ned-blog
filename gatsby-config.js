@@ -1,5 +1,9 @@
 module.exports = {
+  siteMetadata: {
+    title: `Ned's Dev`,
+  },
   plugins: [
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -25,6 +29,13 @@ module.exports = {
             variants: [`400`, `700`],
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
   ],
