@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
+import Social from "../components/social"
 
 const IndexContainer = styled.div`
   font-family: "Lato";
@@ -14,5 +15,6 @@ export default () => (
     <IndexContainer>
       <h1>Welcome to My Blog!</h1>
     </IndexContainer>
+    <Social />
   </Layout>
 )
