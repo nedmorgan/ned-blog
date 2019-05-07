@@ -3,11 +3,12 @@ module.exports = {
     title: `Ned's Dev`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
-        // Add any options here
+        pure: true,
       },
     },
     {
