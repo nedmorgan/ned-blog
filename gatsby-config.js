@@ -5,6 +5,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
