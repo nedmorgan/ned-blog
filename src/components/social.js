@@ -16,7 +16,8 @@ const SocialContainer = styled.div`
   flex-direction: column;
   align-items: center;
   border-right: 2px solid black;
-  padding-right: 1em;
+  padding-right: 2em;
+  position: absolute;
 
   .icon {
     font-size: 3em;
