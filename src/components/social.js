@@ -9,27 +9,40 @@ import {
 import { faPortrait } from "@fortawesome/free-solid-svg-icons"
 
 const SocialContainer = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 75px;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px solid black;
+  padding-right: 1em;
+
+  .icon {
+    font-size: 3em;
+    color: black;
+    margin: 0 0.5em 0.5em 0.5em;
+  }
+
+  .icon:hover {
+    color: #149cea;
+  }
 `
 
 const Social = () => {
   return (
     <SocialContainer>
       <a href={`https://github.com/nedmorgan`}>
-        <FontAwesomeIcon icon={faGithub} />
+        <FontAwesomeIcon className={`icon`} icon={faGithub} />
       </a>
       <a href={`https://nedmorgan.github.io/`}>
-        <FontAwesomeIcon icon={faPortrait} />
+        <FontAwesomeIcon className={`icon`} icon={faPortrait} />
       </a>
       <a href={`https://www.linkedin.com/in/nathanielpmorgan/`}>
-        <FontAwesomeIcon icon={faLinkedin} />
+        <FontAwesomeIcon className={`icon`} icon={faLinkedin} />
       </a>
       <a href={`https://twitter.com/nmorganexplores`}>
-        <FontAwesomeIcon icon={faTwitterSquare} />
+        <FontAwesomeIcon className={`icon`} icon={faTwitterSquare} />
       </a>
     </SocialContainer>
   )

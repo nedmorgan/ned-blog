@@ -8,11 +8,22 @@ const LayoutContainer = styled.div`
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   margin: 0 auto;
+  border-bottom: 2px solid black;
 
   .nav-link {
     float: right;
     margin-left: 1em;
     margin-top: 3em;
+    text-decoration: none;
+  }
+
+  .nav-text {
+    color: black;
+  }
+
+  .nav-text:hover {
+    color: #149cea;
+    cursor: pointer;
   }
 
   img {
