@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import Social from "../components/social"
+import Footer from "../components/footer"
 
 const IndexContainer = styled.div`
   font-family: "Lato", sans-serif;
@@ -26,5 +27,6 @@ export default () => (
         simple ways to keep sane while finding my path.
       </h3>
     </IndexContainer>
+    <Footer />
   </Layout>
 )

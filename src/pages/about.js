@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import Social from "../components/social"
+import Footer from "../components/footer"
 
 const AboutContainer = styled.div`
   font-family: "Lato";
@@ -28,5 +29,6 @@ export default () => (
         guitar.
       </p>
     </AboutContainer>
+    <Footer />
   </Layout>
 )
