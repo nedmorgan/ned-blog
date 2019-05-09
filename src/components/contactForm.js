@@ -55,9 +55,13 @@ class ContactForm extends Component {
               type="text"
               name="firstname"
               id="firstname"
-              placeholder={`${this.state.randomName.name.first} ${
-                this.state.randomName.name.last
-              }`}
+              placeholder={`${this.state.randomName.name.first
+                .charAt(0)
+                .toUpperCase() +
+                this.state.randomName.name.first.substring(
+                  1
+                )} ${this.state.randomName.name.last.charAt(0).toUpperCase() +
+                this.state.randomName.name.last.substring(1)}`}
             />
             <br />
             <label for="email">E-mail: </label>
