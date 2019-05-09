@@ -23,7 +23,7 @@ const FooterContainer = styled.div`
 const Footer = () => {
   return (
     <FooterContainer>
-      <footer className="bottom">
+      <footer>
         <span>© 2019 Copyright: </span>
         <a
           href="https://nedmorgan.github.io/"

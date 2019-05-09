@@ -73,7 +73,7 @@ export default ({ children }) => {
           <Link className={`nav-link`} to={`/about/`}>
             <h3 className={`nav-text`}>About</h3>
           </Link>
-          <Link className={`nav-link`} to={`mailto:nmorgan1987@gmail.com`}>
+          <Link className={`nav-link`} to={`/contact/`}>
             <h3 className={`nav-text`}>Contact</h3>
           </Link>
         </div>

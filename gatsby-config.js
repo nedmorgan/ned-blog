@@ -7,6 +7,14 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-transformer-remark`,
     {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "NAMEAPI",
+        fieldName: "randomName",
+        url: "https://randomuser.me/api/",
+      },
+    },
+    {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         pure: true,
