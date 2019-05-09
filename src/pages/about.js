@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
+import Social from "../components/social"
 
 const AboutContainer = styled.div`
   font-family: "Lato";
@@ -16,6 +17,7 @@ const AboutContainer = styled.div`
 
 export default () => (
   <Layout>
+    <Social />
     <AboutContainer>
       <img src={`ned.JPG`} alt={`Ned Morgan`} />
       <p>
