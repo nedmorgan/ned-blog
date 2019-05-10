@@ -27,6 +27,34 @@ const ContactFormContainer = styled.div`
   textarea {
     border-radius: 5px;
   }
+
+  @keyframes spinner {
+    0% {
+      transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+    100% {
+      transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+  }
+
+  .spinner {
+    height: 15vh;
+    position: relative;
+
+    &::before {
+      animation: 2s linear infinite spinner;
+      border: solid 3px #eee;
+      border-bottom-color: #ef6565;
+      border-radius: 50%;
+      content: "";
+      height: 40px;
+      left: 50%;
+      position: absolute;
+      top: 70%;
+      transform: translate3d(-50%, -50%, 0);
+      width: 40px;
+    }
+  }
 `
 
 class ContactForm extends Component {
@@ -78,7 +106,9 @@ class ContactForm extends Component {
               <button>Submit!</button>
             </div>
           </form>
-        ) : null}
+        ) : (
+          <div className="spinner" />
+        )}
       </ContactFormContainer>
     )
   }
