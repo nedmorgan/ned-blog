@@ -7,6 +7,15 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-transformer-remark`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/images`,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
       resolve: "gatsby-source-graphql",
       options: {
         typeName: "NAMEAPI",
