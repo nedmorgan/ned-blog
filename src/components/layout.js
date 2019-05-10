@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { Helmet } from "react-helmet"
 
 const LayoutContainer = styled.div`
-  width: 600px;
+  width: 700px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   margin: 0 auto;
