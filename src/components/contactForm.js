@@ -77,7 +77,10 @@ class ContactForm extends Component {
     return (
       <ContactFormContainer>
         {this.state.hasLoadedAPI ? (
-          <form>
+          <form
+            action="https://formspree.io/nmorgan1987@gmail.com"
+            method="POST"
+          >
             <label for="name">Name: </label>
             <input
               type="text"
@@ -100,10 +103,15 @@ class ContactForm extends Component {
               placeholder={this.state.randomName.email}
             />
             <br />
-            <label for="comment">Comment: </label>
-            <textarea rows="5" cols="50" />
+            <label for="message">Message: </label>
+            <textarea
+              name="message"
+              rows="5"
+              cols="50"
+              placeholder="Enter Message"
+            />
             <div className={`button-div`}>
-              <button>Submit!</button>
+              <button>Connect!</button>
             </div>
           </form>
         ) : (
