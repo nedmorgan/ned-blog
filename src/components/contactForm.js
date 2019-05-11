@@ -20,12 +20,42 @@ const ContactFormContainer = styled.div`
   }
 
   button {
-    width: 50px;
+    width: 95px;
+    border: 2px solid rgba(200, 200, 200, 0.8);
+    padding: 12px 8px;
+    border-radius: 5px;
+    font-size: 1.05em;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .button:after {
+    content: "";
+    background: #90ee90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+  }
+
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
   }
 
   input,
   textarea {
     border-radius: 5px;
+    border: 2px solid rgba(200, 200, 200, 0.8);
   }
 
   @keyframes spinner {
