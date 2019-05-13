@@ -26,7 +26,7 @@ const SocialContainer = styled.div`
   }
 
   .icon:hover {
-    color: #149cea;
+    color: whitesmoke;
   }
 `
 

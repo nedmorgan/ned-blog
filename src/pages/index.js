@@ -27,7 +27,7 @@ const IndexContainer = styled.div`
   }
 
   .blog-title:hover {
-    color: #149cea;
+    color: whitesmoke;
     cursor: pointer;
   }
 `
