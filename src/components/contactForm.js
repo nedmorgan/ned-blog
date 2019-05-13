@@ -10,6 +10,7 @@ const ContactFormContainer = styled.div`
     width: 600px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
+    margin-top: 2em;
   }
 
   .button-div {

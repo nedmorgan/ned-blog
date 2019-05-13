@@ -33,7 +33,6 @@ const IndexContainer = styled.div`
 `
 
 export default ({ data }) => {
-  console.log(data)
   return (
     <Layout>
       <Social />
