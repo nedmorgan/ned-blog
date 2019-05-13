@@ -37,6 +37,20 @@ export default ({ children }) => {
   const data = useStaticQuery(
     graphql`
       query {
+        allFile {
+          edges {
+            node {
+              childImageSharp {
+                id
+                original {
+                  width
+                  height
+                  src
+                }
+              }
+            }
+          }
+        }
         site {
           siteMetadata {
             title
@@ -45,6 +59,8 @@ export default ({ children }) => {
       }
     `
   )
+  console.log(data.allFile.edges[0].node.childImageSharp.original.src)
+
   return (
     <div>
       <LayoutContainer>
@@ -68,7 +84,10 @@ export default ({ children }) => {
         </Helmet>
         <div>
           <Link className={`nav-image`} to={`/`}>
-            <img src={`ned_avatar.png`} alt={`Ned's Avatar`} />
+            <img
+              src={data.allFile.edges[0].node.childImageSharp.original.src}
+              alt={`Ned's Avatar`}
+            />
           </Link>
           <Link className={`nav-link`} to={`/about/`}>
             <h3 className={`nav-text`}>About</h3>

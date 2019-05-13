@@ -20,6 +20,16 @@ const IndexContainer = styled.div`
     width: 700px;
     background-color: black;
   }
+
+  .blog-title {
+    color: black;
+    text-decoration: none;
+  }
+
+  .blog-title:hover {
+    color: #149cea;
+    cursor: pointer;
+  }
 `
 
 export default ({ data }) => {
@@ -40,7 +50,7 @@ export default ({ data }) => {
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link to={node.fields.slug}>
-              <h3>
+              <h3 className="blog-title">
                 {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
               </h3>
             </Link>
