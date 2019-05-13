@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import Social from "../components/social"
@@ -10,10 +11,7 @@ const AboutContainer = styled.div`
   width: 600px;
   margin: 0 auto;
   margin-top: 2em;
-
-  p {
-    font-family: "Lato", sans-serif;
-  }
+  height: 100vh;
 
   .image-container {
     width: 100%;
@@ -29,14 +27,13 @@ const AboutContainer = styled.div`
 `
 
 export default ({ data }) => {
-  console.log(data)
   return (
     <Layout>
       <Social />
       <AboutContainer>
         <div className={`image-container`}>
           <img
-            src={data.allFile.edges[1].node.childImageSharp.original.src}
+            src={data.allFile.edges[2].node.childImageSharp.original.src}
             alt={`Ned Morgan`}
           />
         </div>

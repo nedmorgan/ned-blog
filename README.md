@@ -11,4 +11,6 @@ Web development and programming and are interesting fields with endless amounts 
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
 
+Background Photo by Markus Spiske on Unsplash
+
 <!-- AUTO-GENERATED-CONTENT:END -->
