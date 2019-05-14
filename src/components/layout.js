@@ -4,18 +4,14 @@ import styled from "styled-components"
 import { Helmet } from "react-helmet"
 
 const ColorContainer = styled.div`
-  background: #283048; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #859398,
-    #283048
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #859398,
-    #283048
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("background.jpg");
+  background-size: 100vw 100vh;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 `
 
 const LayoutContainer = styled.div`
@@ -23,7 +19,7 @@ const LayoutContainer = styled.div`
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   margin: 0 auto;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid whitesmoke;
 
   .nav-link {
     float: right;
@@ -33,7 +29,7 @@ const LayoutContainer = styled.div`
   }
 
   .nav-text {
-    color: black;
+    color: whitesmoke;
   }
 
   .nav-text:hover {

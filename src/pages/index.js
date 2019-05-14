@@ -15,14 +15,19 @@ const IndexContainer = styled.div`
     text-align: center;
   }
 
+  h1,
+  h3 {
+    color: whitesmoke;
+  }
+
   .line {
     height: 2px;
     width: 700px;
-    background-color: black;
+    background-color: whitesmoke;
   }
 
   .blog-title {
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
   }
 

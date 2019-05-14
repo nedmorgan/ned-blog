@@ -15,18 +15,19 @@ const SocialContainer = styled.div`
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  border-right: 2px solid black;
+  border-right: 2px solid whitesmoke;
   padding-right: 2em;
   position: absolute;
+  color: whitesmoke;
 
   .icon {
     font-size: 3em;
-    color: black;
+    color: whitesmoke;
     margin: 0 0.5em 0.5em 0.5em;
   }
 
   .icon:hover {
-    color: whitesmoke;
+    color: #149cea;
   }
 `
 
