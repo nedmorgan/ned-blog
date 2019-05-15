@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { css } from "@emotion/core"
 
 const noMargin = css`
-  margin: 0;
+  color: black;
 `
 
 export default function HTML(props) {
@@ -18,7 +18,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
       </head>
-      <body css={noMargin} {...props.bodyAttributes}>
+      <body {...props.bodyAttributes}>
         {props.preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript">
           This app works best with JavaScript enabled.

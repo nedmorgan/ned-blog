@@ -1,7 +1,14 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import styled from "styled-components"
 import { Helmet } from "react-helmet"
+import styled from "styled-components"
+import { createGlobalStyle } from "styled-components"
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: ${props => (props.remove ? "0" : "0")};
+  }
+`
 
 const ColorContainer = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -73,6 +80,7 @@ export default ({ children }) => {
 
   return (
     <ColorContainer>
+      <GlobalStyle remove />
       <LayoutContainer>
         <Helmet>
           <title>{data.site.siteMetadata.title}</title>
