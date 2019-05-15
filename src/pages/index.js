@@ -16,8 +16,20 @@ const IndexContainer = styled.div`
   }
 
   h1,
-  h3 {
+  h3,
+  h4,
+  p {
     color: whitesmoke;
+  }
+
+  h4 {
+    margin: 5px;
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.25em;
+    margin-top: 5px;
   }
 
   .line {
@@ -26,13 +38,19 @@ const IndexContainer = styled.div`
     background-color: whitesmoke;
   }
 
-  .blog-title {
-    color: whitesmoke;
+  .blog-link {
     text-decoration: none;
   }
 
-  .blog-title:hover {
+  .blog-title {
     color: whitesmoke;
+    text-decoration: underline;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .blog-title:hover {
+    color: #149cea;
     cursor: pointer;
   }
 `
@@ -53,7 +71,7 @@ export default ({ data }) => {
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
-            <Link to={node.fields.slug}>
+            <Link className={`blog-link`} to={node.fields.slug}>
               <h3 className="blog-title">
                 {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
               </h3>

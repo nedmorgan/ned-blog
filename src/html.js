@@ -1,10 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { css } from "@emotion/core"
-
-const noMargin = css`
-  color: black;
-`
 
 export default function HTML(props) {
   return (
