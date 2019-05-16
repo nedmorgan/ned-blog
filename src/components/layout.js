@@ -3,6 +3,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import { Helmet } from "react-helmet"
 import styled from "styled-components"
 import { createGlobalStyle } from "styled-components"
+import ImagePage from "./imagePage"
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -80,6 +81,7 @@ export default ({ children }) => {
 
   return (
     <ColorContainer>
+      <ImagePage />
       <GlobalStyle remove />
       <LayoutContainer>
         <Helmet>

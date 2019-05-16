@@ -9,9 +9,10 @@ const FooterContainer = styled.div`
   font-family: "Lato", sans-serif;
   padding-bottom: 1em;
   margin-top: 3em;
+  color: whitesmoke;
 
   a {
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
   }
 
