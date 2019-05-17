@@ -36,19 +36,12 @@ const ContactFormContainer = styled.div`
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
+    transition: background-color 2s, color 2s;
   }
 
-  .button:after {
-    content: "";
-    background: #90ee90;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px !important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s;
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
   }
 
   .button:active:after {

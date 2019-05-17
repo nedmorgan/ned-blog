@@ -8,9 +8,13 @@ const FooterContainer = styled.div`
   bottom: 0;
   font-family: "Lato", sans-serif;
   padding-bottom: 1em;
-  margin-top: 3em;
+  margin-top: 1em;
   color: whitesmoke;
   background-color: rgba(0, 0, 0, 0.4);
+
+  footer {
+    padding-top: 1em;
+  }
 
   a {
     color: whitesmoke;

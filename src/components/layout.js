@@ -11,18 +11,14 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const ColorContainer = styled.div`
-  background-color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.8);
 
   .background-image {
     position: absolute;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     z-index: 0;
     filter: blur(1px);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
   }
 `
 

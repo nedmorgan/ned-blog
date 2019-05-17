@@ -25,11 +25,12 @@ const BlogPostContainer = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    height: 4em;
   }
 
   .twitter-text {
     padding: 0.5em;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     transition: background-color 2s;
   }
@@ -78,7 +79,12 @@ export default ({ data }) => {
           <h3>
             What does{" "}
             <a href={`https://twitter.com/`}>
-              <FontAwesomeIcon className={`icon`} icon={faTwitter} />
+              <FontAwesomeIcon
+                className={`icon`}
+                icon={faTwitter}
+                target="_blank"
+                rel="noreferrer"
+              />
             </a>{" "}
             have to say....
           </h3>
@@ -87,7 +93,11 @@ export default ({ data }) => {
               return (
                 <div className={`twitter-text`}>
                   <span>
-                    <a href={`https://twitter.com/search?q=${tag}&src=typd`}>
+                    <a
+                      href={`https://twitter.com/search?q=${tag}&src=typd`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       {tag}
                     </a>
                   </span>
