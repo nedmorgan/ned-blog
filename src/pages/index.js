@@ -10,6 +10,7 @@ const IndexContainer = styled.div`
   font-weight: 400;
   width: 700px;
   margin: 0 auto;
+  position: relative;
 
   h1 {
     text-align: center;
@@ -35,7 +36,7 @@ const IndexContainer = styled.div`
   .line {
     height: 2px;
     width: 700px;
-    background-color: whitesmoke;
+    background-color: black;
   }
 
   .blog-link {
@@ -43,7 +44,7 @@ const IndexContainer = styled.div`
   }
 
   .blog-title {
-    color: whitesmoke;
+    color: black;
     text-decoration: underline;
     font-size: 1.5em;
     margin-bottom: 10px;

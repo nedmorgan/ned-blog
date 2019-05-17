@@ -3,7 +3,6 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import { Helmet } from "react-helmet"
 import styled from "styled-components"
 import { createGlobalStyle } from "styled-components"
-import ImagePage from "./imagePage"
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -12,14 +11,14 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const ColorContainer = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("background.jpg");
-  background-size: 100vw 100vh;
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
+  background-color: whitesmoke;
+
+  .background-image {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+  }
 `
 
 const LayoutContainer = styled.div`
@@ -28,6 +27,8 @@ const LayoutContainer = styled.div`
   font-weight: 700;
   margin: 0 auto;
   border-bottom: 2px solid whitesmoke;
+  position: relative;
+  z-index: 1;
 
   .nav-link {
     float: right;
@@ -81,7 +82,11 @@ export default ({ children }) => {
 
   return (
     <ColorContainer>
-      <ImagePage />
+      <img
+        className={`background-image`}
+        src={data.allFile.edges[1].node.childImageSharp.original.src}
+        alt={`Ned's Avatar`}
+      />
       <GlobalStyle remove />
       <LayoutContainer>
         <Helmet>

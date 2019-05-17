@@ -11,6 +11,7 @@ const ContactFormContainer = styled.div`
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     margin-top: 2em;
+    position: relative;
   }
 
   .button-div {
@@ -18,6 +19,10 @@ const ContactFormContainer = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 1em;
+  }
+
+  label {
+    color: whitesmoke;
   }
 
   button {
@@ -115,8 +120,8 @@ class ContactForm extends Component {
             <label for="name">Name: </label>
             <input
               type="text"
-              name="firstname"
-              id="firstname"
+              name="name"
+              id="name"
               placeholder={`${this.state.randomName.name.first
                 .charAt(0)
                 .toUpperCase() +
