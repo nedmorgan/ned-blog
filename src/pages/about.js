@@ -12,6 +12,8 @@ const AboutContainer = styled.div`
   margin: 0 auto;
   margin-top: 2em;
   height: 100vh;
+  position: relative;
+  color: whitesmoke;
 
   .image-container {
     width: 100%;

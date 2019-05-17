@@ -10,6 +10,19 @@ const BlogPostContainer = styled.div`
   margin: 0 auto;
   margin-top: 2em;
   font-family: "Lato", sans-serif;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  border-radius: 5px;
+
+  h1,
+  p {
+    color: whitesmoke;
+  }
+
+  h1 {
+    text-align: center;
+  }
 `
 
 export default ({ data }) => {
@@ -19,7 +32,6 @@ export default ({ data }) => {
       <Social />
       <BlogPostContainer>
         <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <p>{post.frontmatter.description}</p>
       </BlogPostContainer>
       <Footer />

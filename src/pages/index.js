@@ -36,7 +36,7 @@ const IndexContainer = styled.div`
   .line {
     height: 2px;
     width: 700px;
-    background-color: black;
+    background-color: whitesmoke;
   }
 
   .blog-link {
@@ -44,7 +44,7 @@ const IndexContainer = styled.div`
   }
 
   .blog-title {
-    color: black;
+    color: whitesmoke;
     text-decoration: underline;
     font-size: 1.5em;
     margin-bottom: 10px;

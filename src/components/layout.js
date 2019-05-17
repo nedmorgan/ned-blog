@@ -18,6 +18,11 @@ const ColorContainer = styled.div`
     width: 100vw;
     height: 100vh;
     z-index: 0;
+    filter: blur(1px);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
   }
 `
 
