@@ -10,6 +10,7 @@ const FooterContainer = styled.div`
   padding-bottom: 1em;
   margin-top: 3em;
   color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.4);
 
   a {
     color: whitesmoke;

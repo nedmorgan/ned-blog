@@ -11,7 +11,6 @@ const AboutContainer = styled.div`
   width: 600px;
   margin: 0 auto;
   margin-top: 2em;
-  height: 100vh;
   position: relative;
   color: whitesmoke;
 

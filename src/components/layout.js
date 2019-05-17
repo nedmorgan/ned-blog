@@ -16,7 +16,7 @@ const ColorContainer = styled.div`
   .background-image {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     z-index: 0;
     filter: blur(1px);
     background-repeat: no-repeat;
