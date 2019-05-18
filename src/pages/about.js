@@ -25,6 +25,15 @@ const AboutContainer = styled.div`
     height: 267px;
     width: 400px;
   }
+
+  @media (max-width: 768px) {
+    width: 90%;
+
+    img {
+      height: 145px;
+      width: 220px;
+    }
+  }
 `
 
 export default ({ data }) => {

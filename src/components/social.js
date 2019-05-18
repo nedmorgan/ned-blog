@@ -44,23 +44,31 @@ const SocialContainer = styled.div`
 const Social = () => {
   return (
     <SocialContainer>
-      <a href={`https://github.com/nedmorgan`} target="_blank" rel="noreferrer">
+      <a
+        href={`https://github.com/nedmorgan`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FontAwesomeIcon className={`icon`} icon={faGithub} />
       </a>
-      <a href={`https://nedmorgan.github.io/`} target="_blank" rel="noreferrer">
+      <a
+        href={`https://nedmorgan.github.io/`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FontAwesomeIcon className={`icon`} icon={faPortrait} />
       </a>
       <a
         href={`https://www.linkedin.com/in/nathanielpmorgan/`}
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
       >
         <FontAwesomeIcon className={`icon`} icon={faLinkedin} />
       </a>
       <a
         href={`https://twitter.com/nmorganexplores`}
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
       >
         <FontAwesomeIcon className={`icon`} icon={faTwitterSquare} />
       </a>

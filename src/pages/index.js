@@ -55,8 +55,14 @@ const IndexContainer = styled.div`
     cursor: pointer;
   }
   @media (max-width: 768px) {
+    width: 90%;
+
+    .line {
+      width: 90%;
+    }
+
     h4 {
-      font-size: 0.75em;
+      font-size: 1em;
     }
   }
 `
@@ -74,7 +80,10 @@ export default ({ data }) => {
           just simple ways to keep sane while finding my path.
         </h3>
         <div className="line" />
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+        <h4>
+          {data.allMarkdownRemark.totalCount}{" "}
+          {data.allMarkdownRemark.totalCount < 1 ? `Posts` : `Post`}
+        </h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link className={`blog-link`} to={node.fields.slug}>

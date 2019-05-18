@@ -52,6 +52,14 @@ const LayoutContainer = styled.div`
     width: 100px;
     border-radius: 15px;
   }
+
+  @media (max-width: 768px) {
+    width: 90%;
+
+    h4 {
+      font-size: 0.75em;
+    }
+  }
 `
 
 export default ({ children }) => {

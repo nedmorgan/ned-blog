@@ -84,6 +84,14 @@ const ContactFormContainer = styled.div`
       width: 40px;
     }
   }
+
+  @media (max-width: 768px) {
+    width: 90%;
+
+    form {
+      width: auto;
+    }
+  }
 `
 
 class ContactForm extends Component {

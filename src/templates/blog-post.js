@@ -83,7 +83,7 @@ export default ({ data }) => {
                 className={`icon`}
                 icon={faTwitter}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               />
             </a>{" "}
             have to say....
@@ -96,7 +96,7 @@ export default ({ data }) => {
                     <a
                       href={`https://twitter.com/search?q=${tag}&src=typd`}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
                       {tag}
                     </a>
