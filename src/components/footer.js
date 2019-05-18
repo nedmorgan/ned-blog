@@ -25,6 +25,10 @@ const FooterContainer = styled.div`
     color: #149cea;
     cursor: pointer;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 const Footer = () => {

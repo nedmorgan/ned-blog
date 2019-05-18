@@ -30,6 +30,15 @@ const SocialContainer = styled.div`
     color: #149cea;
     cursor: pointer;
   }
+
+  @media (max-width: 768px) {
+    bottom: 0;
+    margin-bottom: 2em;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 `
 
 const Social = () => {

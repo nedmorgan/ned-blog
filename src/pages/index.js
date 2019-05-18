@@ -54,6 +54,11 @@ const IndexContainer = styled.div`
     color: #149cea;
     cursor: pointer;
   }
+  @media (max-width: 768px) {
+    h4 {
+      font-size: 0.75em;
+    }
+  }
 `
 
 export default ({ data }) => {
