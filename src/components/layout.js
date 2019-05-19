@@ -20,6 +20,11 @@ const ColorContainer = styled.div`
     z-index: 0;
     filter: blur(1px);
   }
+
+  @media (max-width: 768px) {
+    height: 100%;
+    padding-bottom: 1em;
+  }
 `
 
 const LayoutContainer = styled.div`

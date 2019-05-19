@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 
 const BlogPostContainer = styled.div`
-  width: 600px;
+  width: 650px;
   margin: 0 auto;
   margin-top: 2em;
   font-family: "Lato", sans-serif;
@@ -16,13 +16,14 @@ const BlogPostContainer = styled.div`
   z-index: 2;
 
   .content {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 5px;
+    padding: 1em;
   }
 
   .twitter-div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
     height: 4em;
@@ -33,15 +34,25 @@ const BlogPostContainer = styled.div`
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     transition: background-color 2s;
+    margin: 0.5em;
   }
+
   .twitter-text:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
 
   h1,
-  h3,
   p {
+    color: black;
+  }
+
+  h3 {
     color: whitesmoke;
+  }
+
+  h1,
+  h3 {
+    text-align: center;
   }
 
   span {
@@ -58,9 +69,12 @@ const BlogPostContainer = styled.div`
     cursor: pointer;
   }
 
-  h1,
-  h3 {
-    text-align: center;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
+  .twitter-div {
+    margin-bottom: 2em;
   }
 `
 
@@ -69,10 +83,12 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <Social />
       <BlogPostContainer>
         <div className={`content`}>
-          <h1>{post.frontmatter.title}</h1>
+          <span>{post.frontmatter.date}</span>
+          <h1>
+            <u>{post.frontmatter.title}</u>
+          </h1>
           <p>{post.frontmatter.description}</p>
         </div>
         <div>
@@ -120,6 +136,7 @@ export const query = graphql`
         title
         description
         tags
+        date(formatString: "MMMM DD, YYYY")
       }
     }
   }
