@@ -70,10 +70,6 @@ const BlogPostContainer = styled.div`
   @media (max-width: 768px) {
     width: 90%;
   }
-
-  .twitter-div {
-    margin-bottom: 2em;
-  }
 `
 
 export default ({ data }) => {
@@ -87,8 +83,7 @@ export default ({ data }) => {
           <h1>
             <u>{post.frontmatter.title}</u>
           </h1>
-          <p>{post.frontmatter.description}</p>
-        </div>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <div>
           <h3>
             What does{" "}
@@ -135,6 +130,7 @@ export const query = graphql`
         tags
         date(formatString: "MMMM DD, YYYY")
       }
+      html
     }
   }
 `

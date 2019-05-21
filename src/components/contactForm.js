@@ -23,6 +23,7 @@ const ContactFormContainer = styled.div`
 
   label {
     color: whitesmoke;
+    font-size: 1.5em;
   }
 
   button {
@@ -55,6 +56,7 @@ const ContactFormContainer = styled.div`
   textarea {
     border-radius: 5px;
     border: 2px solid rgba(200, 200, 200, 0.8);
+    font-size: 1em;
   }
 
   @keyframes spinner {
