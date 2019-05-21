@@ -32,8 +32,8 @@ const SocialContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    bottom: 0;
-    margin-bottom: 2em;
+    position: relative;
+    margin-top: 1em;
     display: flex;
     width: 100%;
     flex-direction: row;

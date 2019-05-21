@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
+import Social from "../components/social"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 
@@ -24,7 +25,7 @@ const BlogPostContainer = styled.div`
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    height: 4em;
+    height: 6em;
   }
 
   .twitter-text {
@@ -76,6 +77,7 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
+      <Social />
       <BlogPostContainer>
         <div className={`content`}>
           <span>{post.frontmatter.date}</span>
