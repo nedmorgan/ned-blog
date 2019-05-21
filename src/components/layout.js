@@ -18,7 +18,7 @@ const ColorContainer = styled.div`
     width: 100vw;
     height: 100vh;
     z-index: 0;
-    filter: blur(1px);
+    filter: blur(1.3px);
   }
 
   @media (max-width: 768px) {
