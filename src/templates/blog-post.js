@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
-import Footer from "../components/footer"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 
@@ -122,7 +121,6 @@ export default ({ data }) => {
           </div>
         </div>
       </BlogPostContainer>
-      <Footer />
     </Layout>
   )
 }
