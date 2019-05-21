@@ -73,7 +73,6 @@ const BlogPostContainer = styled.div`
 `
 
 export default ({ data }) => {
-  console.log(data)
   const post = data.markdownRemark
   return (
     <Layout>
@@ -84,6 +83,7 @@ export default ({ data }) => {
             <u>{post.frontmatter.title}</u>
           </h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
         <div>
           <h3>
             What does{" "}
