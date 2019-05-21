@@ -21,10 +21,9 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "axios": "^0.18.0",
     "babel-plugin-styled-components": "^1.10.0",
-    "gatsby": "^2.4.2",
+    "gatsby": "^2.6",
     "gatsby-background-image": "^0.5.8",
     "gatsby-cli": "^2.5.15",
-    "gatsby-image": "^2.1.0",
     "gatsby-plugin-emotion": "^4.0.6",
     "gatsby-plugin-offline": "^2.1.0",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.2",
@@ -39,8 +38,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "styled-components": "^4.2.0",
-    "ts-pnp": "^1.1.2"
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
     "@babel/plugin-transform-typescript": "^7.4.5",
