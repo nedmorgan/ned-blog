@@ -7,6 +7,8 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-typescript`,
+    "@babel/plugin-transform-typescript",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
