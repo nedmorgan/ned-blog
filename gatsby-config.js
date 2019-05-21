@@ -17,14 +17,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: "gatsby-source-graphql",
-      options: {
-        typeName: "NAMEAPI",
-        fieldName: "randomName",
-        url: "https://randomuser.me/api/",
-      },
-    },
-    {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         pure: true,
