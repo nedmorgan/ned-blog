@@ -7,7 +7,7 @@ const ContactFormContainer = styled.div`
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 775px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     margin-top: 2em;

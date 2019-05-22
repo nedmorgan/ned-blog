@@ -8,7 +8,7 @@ import Footer from "../components/footer"
 const IndexContainer = styled.div`
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  width: 700px;
+  width: 775px;
   margin: 0 auto;
   position: relative;
   background-color: rgba(0, 0, 0, 0.55);
@@ -95,7 +95,7 @@ export default ({ data }) => {
                 {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
               </h3>
             </Link>
-            <p>{node.excerpt}</p>
+            <p>{node.frontmatter.description}</p>
           </div>
         ))}
       </IndexContainer>

@@ -8,7 +8,7 @@ import Footer from "../components/footer"
 const AboutContainer = styled.div`
   font-family: "Lato";
   font-weight: 400;
-  width: 600px;
+  width: 775px;
   margin: 0 auto;
   margin-top: 2em;
   position: relative;

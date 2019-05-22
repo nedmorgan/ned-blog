@@ -1,5 +1,5 @@
 ---
-title: "Why Did I Start to Code?"
+title: "Why Did I Change my Career to Code?"
 date: "2019-05-21"
 template: "post"
 draft: false
@@ -9,7 +9,7 @@ tags:
   - "Web Development"
   - "Career"
   - "Programming"
-description: "Just a beginning of my coding journey"
+description: "A little overview on why I began this coding journey"
 ---
 
 ##Early Ambitions
