@@ -14,6 +14,7 @@ const IndexContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.55);
   padding: 1em;
   border-radius: 5px;
+  margin-top: 0.5em;
 
   h1 {
     text-align: center;
