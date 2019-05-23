@@ -51,7 +51,7 @@ export default ({ data }) => {
           I created this blog as an outlet for me to talk/vent about my little
           development journey. My journey, like most, is full of ups and down.
           There are times when I'm super excited by what I have created and
-          other times that I want to set my computer alfame like it was Jimi
+          other times that I want to set my computer aflame like it was Jimi
           Hendrix's guitar.
         </p>
       </AboutContainer>
