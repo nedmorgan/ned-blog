@@ -86,7 +86,7 @@ export default ({ data }) => {
         <div className="line" />
         <h4>
           {data.allMarkdownRemark.totalCount}{" "}
-          {data.allMarkdownRemark.totalCount < 1 ? `Posts` : `Post`}
+          {data.allMarkdownRemark.totalCount > 1 ? `Posts` : `Post`}
         </h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>

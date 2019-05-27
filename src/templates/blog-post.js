@@ -59,12 +59,21 @@ const BlogPostContainer = styled.div`
   }
 
   a {
+    color: #149cea;
     text-decoration: none;
-    color: whitesmoke;
   }
 
   a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .twitter-social {
+    text-decoration: none;
     color: #149cea;
+  }
+
+  .twitter-social:hover {
     cursor: pointer;
   }
 
@@ -89,7 +98,7 @@ export default ({ data }) => {
         <div>
           <h3>
             What does{" "}
-            <a href={`https://twitter.com/`}>
+            <a className={`twitter-social`} href={`https://twitter.com/`}>
               <FontAwesomeIcon
                 className={`icon`}
                 icon={faTwitter}
@@ -105,6 +114,7 @@ export default ({ data }) => {
                 <div className={`twitter-text`}>
                   <span>
                     <a
+                      className={`twitter-social`}
                       href={`https://twitter.com/search?q=${tag}&src=typd`}
                       target="_blank"
                       rel="noopener noreferrer"
