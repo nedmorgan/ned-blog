@@ -9,6 +9,7 @@ tags:
   - "JavaScript"
   - "JS Methods"
   - "Programming"
+  - "Arrays"
 description: "Some use cases for the JavaScript Reduce method"
 ---
 
@@ -19,9 +20,10 @@ JavaScript Reduce allows you to take an array of integers and evaluates it down 
 
 ##Ways to use JavaScript Reduce
 
-A simple example on how to use reduce is below:
+####Simple Example:
 
-```function simpleArraySum(array) {
+```
+function simpleArraySum(array) {
      const reducer = ((accumulator, currentValue) => accumulator + currentValue)
      return array.reduce(reducer)
  }
@@ -29,6 +31,44 @@ A simple example on how to use reduce is below:
 simpleArraySum([5, 8, 7])
 ```
 
-The output of this function is 20.
+Each value is passed into the function and the three values are then reduced down to one value, which becomes the sum of all of the values. The output of this function is 20.
 
-A more advanced use of this function could be applied like this:
+####Advanced Example:
+
+```
+let groceryList = [
+  {
+    food: "apple",
+    cost: 1.05,
+    quantity: 3
+  },
+  {
+    food: "orange",
+    cost: .87,
+    quantity: 4
+  },
+  {
+    food: "banana",
+    cost: .55,
+    quantity: 6
+  }
+]
+
+function getGroceryTotal(arr) {
+  let initialValue = 0
+  const taxRate = .09
+  let sum = groceryList.reduce((accumulator, currentValue) =>
+    accumulator + (currentValue.cost * currentValue.quantity)
+  , initialValue)
+  let valueWithTax = sum + (sum * taxRate)
+  console.log(`Groceries total: $${valueWithTax.toFixed(2)}`)
+}
+
+getGroceryTotal(groceryList)
+```
+
+The `initialValue` variable is needed in order for each item to passed properly through the function. Using an arrow function also allows for the code to be shortened.
+
+The output of this function would be, Groceries total: \$10.82. Using string interpolation for the final sum makes things a little cleaner. Through this method you can adjust the tax rate and the value would then change based upon that.
+
+Using this for an array of objects is quite helpful because lessens the amount of code needed to accomplish the task of finding the sum, especially if you have an extensive array of objects.
