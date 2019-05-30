@@ -4,7 +4,7 @@ import styled from "styled-components"
 const FooterContainer = styled.div`
   text-align: center;
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   font-family: "Lato", sans-serif;
   padding-bottom: 1em;
